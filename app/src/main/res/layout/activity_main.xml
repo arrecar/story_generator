@@ -25,7 +25,7 @@
                 android:layout_height="900dp">
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName23"
+                    android:id="@+id/name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="32dp"
@@ -38,7 +38,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName24"
+                    android:id="@+id/gender"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -49,10 +49,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.209"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName23" />
+                    app:layout_constraintTop_toBottomOf="@+id/name" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName25"
+                    android:id="@+id/color"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -63,10 +63,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.209"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName24" />
+                    app:layout_constraintTop_toBottomOf="@+id/gender" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName26"
+                    android:id="@+id/location"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -77,21 +77,21 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.209"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName25" />
+                    app:layout_constraintTop_toBottomOf="@+id/color" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName27"
+                    android:id="@+id/number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="20dp"
                     android:ems="10"
                     android:hint="@string/fav_number"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.209"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName26" />
+                    app:layout_constraintTop_toBottomOf="@+id/location" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -102,10 +102,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.152"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName27" />
+                    app:layout_constraintTop_toBottomOf="@+id/number" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName28"
+                    android:id="@+id/like_one"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -118,7 +118,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName29"
+                    android:id="@+id/like_two"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -128,10 +128,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.251"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName28" />
+                    app:layout_constraintTop_toBottomOf="@+id/like_one" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName30"
+                    android:id="@+id/like_three"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -141,7 +141,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.251"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName29" />
+                    app:layout_constraintTop_toBottomOf="@+id/like_two" />
 
                 <TextView
                     android:id="@+id/textView9"
@@ -152,10 +152,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.17"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName30" />
+                    app:layout_constraintTop_toBottomOf="@+id/like_three" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName31"
+                    android:id="@+id/dislike_one"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -168,7 +168,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName32"
+                    android:id="@+id/dislike_two"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -178,10 +178,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.251"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName31" />
+                    app:layout_constraintTop_toBottomOf="@+id/dislike_one" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName33"
+                    android:id="@+id/dislike_three"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -191,7 +191,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.251"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName32" />
+                    app:layout_constraintTop_toBottomOf="@+id/dislike_two" />
 
                 <Button
                     android:id="@+id/button5"
@@ -201,10 +201,10 @@
                     android:layout_marginTop="32dp"
                     android:text="@string/submit"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName33" />
+                    app:layout_constraintTop_toBottomOf="@+id/dislike_three" />
 
                 <Button
-                    android:id="@+id/button6"
+                    android:id="@+id/clear_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
@@ -213,7 +213,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.078"
                     app:layout_constraintStart_toEndOf="@+id/button5"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName33" />
+                    app:layout_constraintTop_toBottomOf="@+id/dislike_three" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
