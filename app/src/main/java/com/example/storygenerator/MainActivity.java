@@ -2,12 +2,15 @@ package com.example.storygenerator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String EXTRA_MESSAGE = "com.example.storygenerator.MESSAGE";
     EditText name;
     EditText gender;
     EditText color;
@@ -57,19 +60,52 @@ public class MainActivity extends AppCompatActivity {
                 dislike_three.getText().clear();
             }
         });
-        submit_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                char result = name.getText().charAt(0);
-                Character c1 = new Character(result);
-                if (c1.equals('A') || c1.equals('B') || c1.equals('C') || c1.equals('D') || c1.equals('E') || c1.equals('F') || c1.equals('G') || c1.equals('H')) {
-                System.out.println("First Test");
-                } else if (c1.equals('I') || c1.equals('J') || c1.equals('K') || c1.equals('L') || c1.equals('M') || c1.equals('N') || c1.equals('O') || c1.equals('P')) {
-                System.out.println("Second Test");
-                } else if (c1.equals('Q') || c1.equals('R') || c1.equals('S') || c1.equals('T') || c1.equals('U') || c1.equals('V') || c1.equals('W') || c1.equals('X') || c1.equals('Y') || c1.equals('Z')) {
-                System.out.println("Third Test");
-                }
-            }
-        });
+       // submit_btn.setOnClickListener(new View.OnClickListener() {
+           // @Override
+
+       // });
+    }
+
+
+    public void theSubmit(View view) {
+        char result = name.getText().charAt(0);
+        Character c1 = new Character(result);
+        if (c1.equals('A') || c1.equals('B') || c1.equals('C') || c1.equals('D') || c1.equals('E') || c1.equals('F') || c1.equals('G') || c1.equals('H')) {
+            System.out.println("First Test");
+            MainActivity mainclass = new MainActivity();
+            mainclass.firstStory();
+        } else if (c1.equals('I') || c1.equals('J') || c1.equals('K') || c1.equals('L') || c1.equals('M') || c1.equals('N') || c1.equals('O') || c1.equals('P')) {
+            System.out.println("Second Test");
+            MainActivity mainclass = new MainActivity();
+            mainclass.secondStory();
+        } else if (c1.equals('Q') || c1.equals('R') || c1.equals('S') || c1.equals('T') || c1.equals('U') || c1.equals('V') || c1.equals('W') || c1.equals('X') || c1.equals('Y') || c1.equals('Z')) {
+            System.out.println("Third Test");
+            MainActivity mainclass = new MainActivity();
+            mainclass.thirdStory();
+        } else {
+            MainActivity mainclass = new MainActivity();
+            mainclass.error();
+        }
+    }
+
+    public void firstStory() {
+
+    }
+
+    public void secondStory() {
+
+    }
+
+    public void thirdStory() {
+
+    }
+
+    public void error() {
+        Intent intent = new Intent(this, SubmitPageError.class);
+        String message = ("ERROR: Your name either didn't start with a letter or was not capitalized. Try Again.");
+        final String TAG = "MyActivity";
+        Log.d(TAG, "About to create intent with " + message);
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
     }
 }

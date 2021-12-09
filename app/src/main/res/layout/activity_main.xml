@@ -199,7 +199,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="40dp"
                     android:layout_marginTop="32dp"
-                    android:text="@string/submit"
+                    android:onClick="theSubmit"
+                    android:text="Submit"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/dislike_three" />
 
