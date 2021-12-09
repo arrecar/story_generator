@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     EditText dislike_two;
     EditText dislike_three;
     Button clear_btn;
+    Button submit_btn;
     
 
     @Override
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         dislike_two=findViewById(R.id.dislike_two);
         dislike_three=findViewById(R.id.dislike_three);
         clear_btn=findViewById(R.id.clear_btn);
+        submit_btn=findViewById(R.id.submit_btn);
         clear_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,6 +55,20 @@ public class MainActivity extends AppCompatActivity {
                 dislike_one.getText().clear();
                 dislike_two.getText().clear();
                 dislike_three.getText().clear();
+            }
+        });
+        submit_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                char result = name.getText().charAt(0);
+                Character c1 = new Character(result);
+                if (c1.equals('A') || c1.equals('B') || c1.equals('C') || c1.equals('D') || c1.equals('E') || c1.equals('F') || c1.equals('G') || c1.equals('H')) {
+                System.out.println("First Test");
+                } else if (c1.equals('I') || c1.equals('J') || c1.equals('K') || c1.equals('L') || c1.equals('M') || c1.equals('N') || c1.equals('O') || c1.equals('P')) {
+                System.out.println("Second Test");
+                } else if (c1.equals('Q') || c1.equals('R') || c1.equals('S') || c1.equals('T') || c1.equals('U') || c1.equals('V') || c1.equals('W') || c1.equals('X') || c1.equals('Y') || c1.equals('Z')) {
+                System.out.println("Third Test");
+                }
             }
         });
     }
